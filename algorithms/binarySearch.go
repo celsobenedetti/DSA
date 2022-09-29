@@ -19,6 +19,10 @@ func binarySearchRec(arr []int, value, low, high int) int {
 		return middle
 	}
 
+	if low >= high {
+		return -1
+	}
+
 	if value > arr[middle] {
 		return binarySearchRec(arr, value, middle+1, high)
 	}
