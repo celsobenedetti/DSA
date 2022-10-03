@@ -5,25 +5,25 @@ import (
 	"fmt"
 )
 
-type node struct {
+type llNode struct {
 	data int
-	next *node
+	next *llNode
 }
 
 type LinkedList struct {
-	Head   *node
+	Head   *llNode
 	length int
 }
 
 func (l *LinkedList) Prepend(data int) {
-	newHead := &node{data: data}
+	newHead := &llNode{data: data}
 	newHead.next = l.Head
 	l.Head = newHead
 	l.length++
 }
 
 func (l *LinkedList) Append(data int) {
-	newNode := &node{data: data}
+	newNode := &llNode{data: data}
 	if l.Head == nil {
 		l.Head = newNode
 	} else {
