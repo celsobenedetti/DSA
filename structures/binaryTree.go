@@ -1,7 +1,7 @@
 package structures
 
-type Node struct {
-	Left  *Node
-	Right *Node
-	Key   int
+type BinaryNode struct {
+	Left  *BinaryNode
+	Right *BinaryNode
+	Value int
 }

@@ -1,11 +1,5 @@
 package algorithms
 
-import (
-	"github.com/celso-patiri/DSA/structures"
-)
-
-type NodeQueue = structures.Queue[*Node]
-
 func BFS(head *Node, target int) bool {
 	q := NodeQueue{}
 	q.Push(head)
