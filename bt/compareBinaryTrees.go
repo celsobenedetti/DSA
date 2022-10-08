@@ -1,4 +1,4 @@
-package algorithms
+package bt
 
 func compare(a, b *Node) bool {
 

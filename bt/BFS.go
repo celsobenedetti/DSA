@@ -1,4 +1,4 @@
-package algorithms
+package bt
 
 func BFS(head *Node, target int) bool {
 	q := NodeQueue{}

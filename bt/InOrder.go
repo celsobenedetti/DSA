@@ -1,4 +1,4 @@
-package algorithms
+package bt
 
 func walkIn(curr *Node, path *[]int) []int {
 	if curr == nil {

@@ -1,4 +1,4 @@
-package algorithms
+package bt
 
 func walkPre(curr *Node, path *[]int) []int {
 	if curr == nil {

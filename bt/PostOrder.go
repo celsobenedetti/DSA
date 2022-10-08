@@ -1,4 +1,4 @@
-package algorithms
+package bt
 
 func walkPost(curr *Node, path *[]int) []int {
 	if curr == nil {

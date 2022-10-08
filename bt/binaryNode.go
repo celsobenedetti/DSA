@@ -1,4 +1,4 @@
-package structures
+package bt
 
 type BinaryNode struct {
 	Left  *BinaryNode
