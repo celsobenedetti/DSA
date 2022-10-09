@@ -2,7 +2,7 @@ package bt
 
 func BFS(head *Node, target int) bool {
 	q := NodeQueue{}
-	q.Push(head)
+	q.Enqueue(head)
 
 	for q.Size() > 0 {
 		curr, _ := q.Dequeue()
@@ -12,11 +12,11 @@ func BFS(head *Node, target int) bool {
 		}
 
 		if curr.Left != nil {
-			q.Push(curr.Left)
+			q.Enqueue(curr.Left)
 		}
 
 		if curr.Right != nil {
-			q.Push(curr.Right)
+			q.Enqueue(curr.Right)
 		}
 
 	}

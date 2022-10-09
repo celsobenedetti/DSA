@@ -8,7 +8,7 @@ type Queue[T any] struct {
 	items []T
 }
 
-func (q *Queue[T]) Push(data T) {
+func (q *Queue[T]) Enqueue(data T) {
 	q.items = append(q.items, data)
 }
 
