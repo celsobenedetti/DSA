@@ -4,7 +4,7 @@
  * Given a weighted - non negative graph of size N
  * */
 
-import {Graph} from './graph';
+import { Graph } from "./graph";
 
 export function Dijkstra(G: Graph, source: number): number[] {
     const N = G.size();
